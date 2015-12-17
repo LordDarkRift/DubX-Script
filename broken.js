@@ -488,6 +488,12 @@ if (!hello_run && Dubtrack.session.id) {
 			    response = "I suppose this song doesn't make me want to punch somebody...or maybe it does?";
 		    } else if (content.indexOf('!jam') >-1) {
 			    response = "Do I HAVE to awesome this song?";
+		    } else if (content.indexOf('!awesome') >-1) {
+			    response = "I love it when you tell me what to do...NOT!";
+		    } else if (content.indexOf('!boogie') >-1) {
+			    response = "Give me some drinks and smokes and I'll dance all night.";
+		    } else if (content.indexOf('!party') >-1) {
+			    response = "The last time I had this many people organized around me they tried to stop me from drinking.";
 		    }
 
 		    if (response.length != 0) {
