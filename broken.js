@@ -470,15 +470,28 @@ if (!hello_run && Dubtrack.session.id) {
             var content = e.message;
 	    console.log(content);
             var user = Dubtrack.session.get('username');
-            if (options.let_active_afk) {
-            	if (content.indexOf('!woot') >-1) {
-                    $('#chat-txt-message').val("I suppose this song doesn't make me want to punch somebody...or maybe it does?");
-                    Dubtrack.room.chat.sendMessage();
-                } else if (content.indexOf('!jam') >-1) {
-			$('#chat-txt-message').val("Do I HAVE to awesome this song?");
-			Dubtrack.room.chat.sendMessage();
-		}
-            }
+            //if (options.let_active_afk) {
+            //	if (content.indexOf('!woot') >-1) {
+            //        $('#chat-txt-message').val("I suppose this song doesn't make me want to punch somebody...or maybe it does?");
+            //        Dubtrack.room.chat.sendMessage();
+            //    } else if (content.indexOf('!jam') >-1) {
+	//		$('#chat-txt-message').val("Do I HAVE to awesome this song?");
+	//		Dubtrack.room.chat.sendMessage();
+	//	}
+        //    }
+	    var response = "";
+	    if (options.let_active_afk) {
+		    if (content.indexOf('!woot') >-1) {
+			    response = "I suppose this song doesn't make me want to punch somebody...or maybe it does?";
+		    } else if (content.indexOf('!jam') >-1) {
+			    response = "Do I HAVE to awesome this song?";
+		    }
+
+		    if (response.length != 0) {
+			    $('#chat-txt-message').val(response);
+			    Dubtrack.room.chat.sendMessage();
+		    }
+	    }
         },
         saveAfkMessage: function() {
             var customAfkMessage = $('.input').val();
