@@ -494,6 +494,8 @@ if (!hello_run && Dubtrack.session.id) {
 			    response = "Give me some drinks and smokes and I'll dance all night.";
 		    } else if (content.indexOf('!party') >-1) {
 			    response = "The last time I had this many people organized around me they tried to stop me from drinking.";
+		    } else if (content.indexOf('!8ball') >-1) {
+			    response = "I'm too drunk to care.";
 		    }
 
 		    if (response.length != 0) {
