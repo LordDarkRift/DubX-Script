@@ -468,6 +468,7 @@ if (!hello_run && Dubtrack.session.id) {
         },
         afk_chat_respond: function(e) {
             var content = e.message;
+	    console.log(content);
             var user = Dubtrack.session.get('username');
             if (content.indexOf('!woot') >-1) {
                 if (options.let_active_afk) {
