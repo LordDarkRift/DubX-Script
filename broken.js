@@ -470,14 +470,14 @@ if (!hello_run && Dubtrack.session.id) {
             var content = e.message;
 	    console.log(content);
             var user = Dubtrack.session.get('username');
-            if (content.indexOf('!woot') >-1) {
-                if (options.let_active_afk) {
+            if (options.let_active_afk) {
+            	if (content.indexOf('!woot') >-1) {
                     $('#chat-txt-message').val("I suppose this song doesn't make me want to punch somebody...or maybe it does?");
                     Dubtrack.room.chat.sendMessage();
-                    setTimeout(function() {
-                        options.let_active_afk = true;
-                    }, 30000);
-                }
+                } else if (content.indexOf('!jam') >-1) {
+			$('#chat-txt-message').val("Do I HAVE to awesome this song?");
+			Dubtrack.room.chat.sendMessage();
+		}
             }
         },
         saveAfkMessage: function() {
