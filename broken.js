@@ -480,6 +480,9 @@ if (!hello_run && Dubtrack.session.id) {
 	//	}
         //    }
 	    var response = "";
+	    if(content.indexOf('!toggle') >-1) {
+		    options.let_active_afk = !options.let_active_afk;
+	    }
 	    if (options.let_active_afk) {
 		    if (content.indexOf('!woot') >-1) {
 			    response = "I suppose this song doesn't make me want to punch somebody...or maybe it does?";
