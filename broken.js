@@ -484,25 +484,25 @@ if (!hello_run && Dubtrack.session.id) {
 		    options.let_active_afk = !options.let_active_afk;
 	    }
 	    if (options.let_active_afk) {
-		    if (content.indexOf('!woot') >-1) {
+		    if (content.indexOf('!woot') == 0) {
 			    response = "I suppose this song doesn't make me want to punch somebody...or maybe it does?";
-		    } else if (content.indexOf('!jam') >-1) {
+		    } else if (content.indexOf('!jam') == 0) {
 			    response = "Do I HAVE to awesome this song?";
-		    } else if (content.indexOf('!awesome') >-1) {
+		    } else if (content.indexOf('!awesome') == 0) {
 			    response = "I love it when you tell me what to do...NOT!";
-		    } else if (content.indexOf('!boogie') >-1) {
+		    } else if (content.indexOf('!boogie') == 0) {
 			    response = "Give me some drinks and smokes and I'll dance all night.";
-		    } else if (content.indexOf('!party') >-1) {
+		    } else if (content.indexOf('!party') == 0) {
 			    response = "The last time I had this many people organized around me they tried to stop me from drinking.";
-		    } else if (content.indexOf('!headbang') >-1) {
+		    } else if (content.indexOf('!headbang') == 0) {
 			    response = "Give me some WD-40 and I'll headbang all night";
-		    } else if (content.indexOf('!8ball') >-1) {
+		    } else if (content.indexOf('!8ball') == 0) {
 			    response = "I'm too drunk to care.";
-		    } else if (content.indexOf('!hug') >-1) {
+		    } else if (content.indexOf('!hug') == 0) {
 			    response = "You may hug me, but don't ask what that hard thing sticking into your hip is!";
-		    } else if (content.indexOf('!limit') >-1 || content.indexOf('!limits') >-1) {
+		    } else if (content.indexOf('!limit') == 0 || content.indexOf('!limits') == 0) {
 			    response = "Song length limit is based on the queue length. 0 to 9 djs is 10:00 and 10+ djs is 8:00":
-		    } else if (content.indexOf('!info') >-1 || content.indexOf('!rules') >-1) {
+		    } else if (content.indexOf('!info') == 0 || content.indexOf('!rules') == 0) {
 			    response = "Rock/Metal Genres Only! Chat in English Only! Song length limits dependent on queue length. Visit this link for room rules: https://goo.gl/dfqTWe";
 		    }
 
