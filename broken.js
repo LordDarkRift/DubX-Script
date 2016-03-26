@@ -504,6 +504,8 @@ if (!hello_run && Dubtrack.session.id) {
 			    response = "Song length limit is based on the queue length. 0 to 9 djs is 10:00 and 10+ djs is 8:00";
 		    } else if (content.indexOf('!info') == 0 || content.indexOf('!rules') == 0) {
 			    response = "Rock/Metal Genres Only! Chat in English Only! Song length limits dependent on queue length. Visit this link for room rules: https://goo.gl/dfqTWe";
+		    } else if (content.indexOf('!bot') == 0) {
+			    response = "Hi, I'm a fake bot made by (insert my asshole of a maker's name here) using a modified version of dubX";
 		    }
 
 		    if (response.length != 0) {
