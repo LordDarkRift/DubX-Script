@@ -511,6 +511,8 @@ if (!hello_run && Dubtrack.session.id) {
 				    response = "heads";
 			    else
 				    response = "tails";
+		    } else if (content.indexOf('!respect') == 0) {
+			    response = "If you don't like a song, meh, mute and move on. People may have tastes different than yours.";
 		    }
 
 		    if (response.length != 0) {
