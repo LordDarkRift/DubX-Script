@@ -506,6 +506,11 @@ if (!hello_run && Dubtrack.session.id) {
 			    response = "Rock/Metal Genres Only! Chat in English Only! Song length limits dependent on queue length. Visit this link for room rules: https://goo.gl/dfqTWe";
 		    } else if (content.indexOf('!bot') == 0) {
 			    response = "Hi, I'm a fake bot made by (insert my asshole of a maker's name here) using a modified version of dubX";
+		    } else if (content.indexOf('!coinflip') == 0) {
+			    if(Math.random() < 0.5)
+				    response = "heads";
+			    else
+				    response = "tails";
 		    }
 
 		    if (response.length != 0) {
