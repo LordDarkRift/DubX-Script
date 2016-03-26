@@ -501,7 +501,7 @@ if (!hello_run && Dubtrack.session.id) {
 		    } else if (content.indexOf('!hug') == 0) {
 			    response = "You may hug me, but don't ask what that hard thing sticking into your hip is!";
 		    } else if (content.indexOf('!limit') == 0 || content.indexOf('!limits') == 0) {
-			    response = "Song length limit is based on the queue length. 0 to 9 djs is 10:00 and 10+ djs is 8:00":
+			    response = "Song length limit is based on the queue length. 0 to 9 djs is 10:00 and 10+ djs is 8:00";
 		    } else if (content.indexOf('!info') == 0 || content.indexOf('!rules') == 0) {
 			    response = "Rock/Metal Genres Only! Chat in English Only! Song length limits dependent on queue length. Visit this link for room rules: https://goo.gl/dfqTWe";
 		    }
